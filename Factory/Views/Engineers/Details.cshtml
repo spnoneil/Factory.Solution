@@ -23,6 +23,9 @@ else
   </ul>
 }
 
+<p>@Html.ActionLink("Add a machine", "AddMachine", new { id = Model.EngineerId })</p>
+
+
 <p>@Html.ActionLink("Back to engineer list", "Index", null, null, new { @class = "navBtn"})</p>
 <p>@Html.ActionLink("Edit engineer", "Edit", null, new { id = Model.EngineerId }, new { @class = "navBtn"})</p>
 <p>@Html.ActionLink("Delete engineer", "Delete", null, new { id = Model.EngineerId }, new { @class = "navBtn"})</p>
