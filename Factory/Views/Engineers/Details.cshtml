@@ -1,7 +1,7 @@
 @{
   Layout = "_Layout";
 }
-
+@using Factory.Models
 @model Factory.Models.Engineer
 
 <h3>@Html.DisplayFor(m => m.Name)'s Info:</h3>
@@ -16,10 +16,6 @@ else
 {
   <h4>This eng is proficient in the following machinery:</h4>
   <ul>
-    @if (Model.Machine.Count == 0)
-    {
-      <p>This eng hasn't been declared proficient in anything!</p>
-    }
     @foreach(var e in Model.JoinEntities)
     {
       <li>@e.Machine.Name</li>

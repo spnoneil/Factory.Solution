@@ -17,5 +17,5 @@
     <li>@Html.ActionLink($"{element.Name}","Details", new { id = element.EngineerId })</li>
   }
 
-<p>@Html.ActionLink("Add new engineer", "Create")</p>
-<p>@Html.ActionLink("Go back home", "Index", "Home")</p>
+<p>@Html.ActionLink("Add new engineer", "Create", null, null, new { @class = "navBtn"})</p>
+<p>@Html.ActionLink("Go back home", "Index", "Home", null, new { @class = "navBtn"})</p>
