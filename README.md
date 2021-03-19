@@ -32,7 +32,7 @@ _A simple MVC page, created for Epicodus Coding School to practice/show knowledg
 * _First, download MySQL Workbench [here](https://dev.mysql.com/downloads/workbench/)_
 * _After a successful install and setup, in the Administration tab, hit "Data Import/Restore", followed by clicking "Import from Self-Contained File", and navigate to the included `scott_oneil.sql` dump structure file_
 * _Click "Start Import"_
-* _Next, in the root directory of `Factory.Solution`, create a file called `appsettings.json` and input the following:_
+* _Next, in the root directory of `Factory.Solution`, create a file called `appsettings.json` and input the following, with "YOUR-PASSWORD-HERE" being the password you set up with MySQL workbench:_
 ```
 {
   "ConnectionStrings": {
@@ -40,7 +40,6 @@ _A simple MVC page, created for Epicodus Coding School to practice/show knowledg
   }
 }
 ```
-  _with "YOUR-PASSWORD-HERE" being the password you set up with MySQL workbench._
 * _Now you're ready to head back to that `http://localhost:5000` to view project_
 
 
@@ -55,6 +54,9 @@ Database, Visualized:
 ## Future implementation
 * _Further styling_
 * _Engineer/Machine search_
+* _Select multiple engineers on machine creation_
+* _Phone number validation_
+* _Search_
 
 ## License
 _GPL_
