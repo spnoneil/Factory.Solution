@@ -1,0 +1,30 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Machine
+
+<h2>Machine Details</h2>
+<hr />
+<h3>Machine's Name: @Html.DisplayFor(m => m.Name)
+<h3>MAchine Specs: @Html.DisplayFor(m => m.Specs)</h3>
+
+@if(@Model.JoinEntities.Count == 0)
+{
+  <p>There ain't no engineers workin' this machine!</p>
+}
+else
+{
+  <h4>These engineers are proficient on this machine:</h4>
+  <ul>
+    @foreach(var e in Model.JoinEntities)
+    {
+      <li>@e.Engineer.Name</li>
+    }
+  </ul>
+}
+
+<p>@Html.ActionLink("Back to machine list", "Index", null, null, new { @class = "navBtn"})</p>
+<p>@Html.ActionLink("Edit this machine's details", "Edit", new { id = Model.MachineId }, new { @class = "navBtn"})</p>
+<p>@Html.ActionLink("Remove this machine", "Delete", new { id = Model.MachineId }, new { @class = "navBtn"})</p>
+<p>@Html.ActionLink("Go home!", "Index", "Home", null, new { @class = "navBtn"})</p>
