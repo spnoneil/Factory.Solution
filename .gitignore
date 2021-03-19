@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+dist/
+coverage/
+*/obj/
+*/bin/
+.vscode
+*/appsettings.json
+whiteboard.txt
