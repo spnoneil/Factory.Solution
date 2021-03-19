@@ -11,7 +11,7 @@ namespace Factory.Models
 
     public int EngineerId { get; set; }
     public string Name { get; set; }
-    public int HourlyRate { get; set; }
+    public int Salary { get; set; }
     public DateTime HireDate { get; set; }
     public string PhoneNumber { get; set; }
     public virtual ICollection<EngineerMachine> JoinEntities { get; set; }
