@@ -15,8 +15,7 @@
     @Html.EditorFor(m => m.Name, new { @class = "form-control", placeholder = "Enter machine's name here", required = "required"})  
     @Html.LabelFor(m => m.Specs, "Machine Specifications")
     @Html.EditorFor(m => m.Specs, new { @class = "form-control", placeholder = "Enter machine specs here", required = "required"})
-    @Html.Label("Select engineer")
-    @Html.DropDownList("EngineerId")
+
 
     <input type="submit" value="Save" />
 }
