@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer
+
+<h4>Edit this engineer: @Html.DisplayFor(m => m.Name)</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(m => m.EngineerId)
+  @Html.LabelFor(m => m.Name, "Engineer's Name")
+  @Html.EditorFor(m => m.Name, new { @class = "form-control", placeholder = "Enter name here", required = "required"})
+  @Html.LabelFor(model => model.PhoneNumber, "Engineer Phone Number")
+  @Html.EditorFor(model => model.PhoneNumber, new { @class = "form-control", placeholder = "Enter engineer's phone number here (xxx-xxx-xxxx)", required = "required"})
+  @Html.LabelFor(model => model.Salary, "Engineer's Salary")
+  @Html.EditorFor(model => model.Salary, new { @class = "form-control", placeholder = "Enter the engineer's salary here", required = "required", type = "number"})
+    <input type="submit" value="Save" />
+}
+
+<p>@Html.ActionLink("Back to engineer list", "Index", null, null, new { @class = "navBtn"})</p>
+<p>@Html.ActionLink("Go home!", "Index", "Home", null, new { @class = "navBtn"})</p>
