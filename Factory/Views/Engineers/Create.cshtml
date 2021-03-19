@@ -16,3 +16,6 @@
   @Html.TextBoxFor(m => m.Salary, new { @class = "form-control", placeholder = "Enter the engineer's salary here", required = "required", type = "number"})
   <input type="submit" value="Add that engineer!" />
 }
+
+<p>@Html.ActionLink("Show all engineers", "Index", null, null, new { @class = "navBtn"})</p>
+<p>@Html.ActionLink("Go home!", "Index", "Home", null, new { @class = "navBtn"})</p>
