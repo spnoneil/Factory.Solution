@@ -1,0 +1,18 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer
+
+<h3>Who's the new engineer in town?</h3>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(m => m.Name, "Engineer's Name")
+  @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Enter name here", required = "required"})
+  @Html.LabelFor(m => m.PhoneNumber, "Phone Number")
+  @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", placeholder = "Enter engineer's phone number here (xxx-xxx-xxxx)", required = "required"})
+  @Html.LabelFor(m => m.Salary, "Engineer's Hourly Rate")
+  @Html.TextBoxFor(m => m.Salary, new { @class = "form-control", placeholder = "Enter the engineer's salary here", required = "required", type = "number"})
+  <input type="submit" value="Add that engineer!" />
+}
