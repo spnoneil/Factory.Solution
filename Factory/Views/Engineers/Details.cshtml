@@ -1,0 +1,28 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer
+
+<h3>@Html.DisplayFor(m => m.Name)'s Info:</h3>
+<h4>@Html.DisplayFor(m => m.PhoneNumber)</h4>
+<h4>Salary: @Html.DisplayFor(m => m.Salary)</h4>
+<h4>Hired on: @Html.DisplayFor(m => m.HireDate)</h4>
+@if(@Model.JoinEntities.Count == 0)
+{
+  <p>This eng hasn't had any machine specialities added!</p>
+}
+else
+{
+  <h4>This eng is proficient in the following machinery:</h4>
+  <ul>
+    @if (Model.Machine.Count == 0)
+    {
+      <p>This eng hasn't been declared proficient in anything!</p>
+    }
+    @foreach(var e in Model.JoinEntities)
+    {
+      <li>@e.Machine.Name</li>
+    }
+  </ul>
+}
