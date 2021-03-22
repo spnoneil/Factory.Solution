@@ -20,3 +20,14 @@ body {
   background-color: rgb(98, 3, 187);
   color: aliceblue;
 }
+
+.navBtn {
+  margin-left: 5%;
+  border: 3px solid black;
+  background-color: blue;
+  padding: 5px;
+}
+
+li a {
+  color: chartreuse;
+}
