@@ -19,15 +19,25 @@
 body {
   background-color: rgb(98, 3, 187);
   color: aliceblue;
+  margin: 5px;
+  padding-bottom: 300px;
 }
 
 .navBtn {
-  margin-left: 5%;
+  display: block;
+  margin-left: 45%;
+  margin-right: 45%;
   border: 3px solid black;
   background-color: blue;
   padding: 5px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 li a {
   color: chartreuse;
+}
+
+p a {
+  color: aliceblue;
 }

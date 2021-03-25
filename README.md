@@ -20,7 +20,7 @@ _A simple MVC page, created for Epicodus Coding School to practice/show knowledg
 ## Setup/Installation Requirements
 
 * _Clone/download from GitHub (unzip, if necessary)_
-* _Open terminal, navigate to the `HairSalon` directory, inside the `HairSalon.Solution` root directory_
+* _Open terminal, navigate to the `Factory` directory, inside the `Factory.Solution` root directory_
 * _Still in the terminal, enter `dotnet restore`._
 * _Next, enter `dotnet build`_
 * _Then, enter `dotnet run`_
@@ -40,7 +40,8 @@ _A simple MVC page, created for Epicodus Coding School to practice/show knowledg
   }
 }
 ```
-* _Now you're ready to head back to that `http://localhost:5000` to view project_
+* _Now, navigate back to the `Factory` directory, and update the database with the command `dotnet ef database update` in the terminal_
+* _Now you're ready to head back to that `http://localhost:5000` and refresh to view project_
 
 
 Database, Visualized:

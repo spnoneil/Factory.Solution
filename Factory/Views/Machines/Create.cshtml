@@ -13,10 +13,9 @@
     @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Enter name of machine here", required = "required"})
     @Html.LabelFor(m => m.Specs, "Machine Specifications")
     @Html.TextBoxFor(m => m.Specs, new { @class = "form-control", placeholder = "Enter specs here", required = "required"})
-    @* MULTIPLE ENG INPUT?? *@
     @Html.Label("Engineer's Name")
     @Html.DropDownList("EngineerId", null, null, new { @class = "form-control"})
 
-    <input type="submit" value="Add new item" class="btn btn-default" />
+    <input type="submit" value="Add new machine" class="btn btn-default" />
 }
 <p>@Html.ActionLink("Show all machines", "Index", null, null, new { @class = "navBtn"})</p>
